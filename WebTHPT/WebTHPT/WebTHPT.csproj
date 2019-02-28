@@ -163,6 +163,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -175,6 +176,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\LoginCss\animate.min.css" />
+    <Content Include="Content\LoginCss\bootstrap.min.css" />
+    <Content Include="Content\LoginCss\font-awesome.min.css" />
+    <Content Include="Content\LoginCss\nprogress.css" />
     <Content Include="Content\StudentCss\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="Content\StudentCss\bootstrap.min.css" />
     <Content Include="Content\StudentCss\custom.min.css" />
@@ -258,6 +263,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\StudentLayout\StudentLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
