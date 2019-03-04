@@ -165,6 +165,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,7 +182,6 @@
     <Content Include="Content\LoginCss\font-awesome.min.css" />
     <Content Include="Content\LoginCss\nprogress.css" />
     <Content Include="Content\StudentCss\bootstrap-progressbar-3.3.4.min.css" />
-    <Content Include="Content\StudentCss\bootstrap.min.css" />
     <Content Include="Content\StudentCss\custom.min.css" />
     <Content Include="Content\StudentCss\daterangepicker.css" />
     <Content Include="Content\StudentCss\green.css" />
@@ -189,6 +189,18 @@
     <Content Include="Content\StudentCss\jquery-jvectormap-2.0.3.css" />
     <Content Include="Content\StudentCss\jqvmap.min.css" />
     <Content Include="Content\StudentCss\nprogress.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Article-Clean.css" />
+    <Content Include="Content\StudentCss\TTHSCss\bootstrap.min.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Footer-Basic.css" />
+    <Content Include="Content\StudentCss\TTHSCss\FPE-Gentella-form-elements-1.css" />
+    <Content Include="Content\StudentCss\TTHSCss\FPE-Gentella-form-elements.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Header-Blue.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Navigation-Clean.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Profile-Edit-Form-1.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Profile-Edit-Form.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Sidebar-Menu-1.css" />
+    <Content Include="Content\StudentCss\TTHSCss\Sidebar-Menu.css" />
+    <Content Include="Content\StudentCss\TTHSCss\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fa-brands-400.svg" />
     <Content Include="fonts\fa-regular-400.svg" />
@@ -252,6 +264,10 @@
     <Content Include="Scripts\StudentJs\moment.min.js" />
     <Content Include="Scripts\StudentJs\nprogress.js" />
     <Content Include="Scripts\StudentJs\skycons.js" />
+    <Content Include="Scripts\StudentJs\TTHSJs\bootstrap.min.js" />
+    <Content Include="Scripts\StudentJs\TTHSJs\jquery.min.js" />
+    <Content Include="Scripts\StudentJs\TTHSJs\Profile-Edit-Form.js" />
+    <Content Include="Scripts\StudentJs\TTHSJs\Sidebar-Menu.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -264,11 +280,13 @@
     <Content Include="Views\StudentLayout\StudentLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Student\ThongTinHocSinh.cshtml" />
+    <Content Include="Views\Teacher\Index.cshtml" />
+    <Content Include="Views\Student\LayCauHoi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -4,5 +4,17 @@
     Layout = "~/Views/StudentLayout/StudentLayout.cshtml";
 }
 
-<h2>Index</h2>
+<div>
+    @for (int j = 0; j < 10; j++)
+    {
+    <form>
+        <div class="text-left d-lg-flex align-items-lg-start"><label >Câu @(j + 1) : Ngày 20 tháng 11 là ngày kỷ niệm nhà giáo Việt Nam. Nước Mỹ có ngày 20 tháng 11 hay không?&nbsp;</label></div>
 
+        <div class="text-left d-lg-flex align-items-lg-start"><input type="radio" class="margin_left"><label>A. @j</label></div>
+        <div class="text-left d-lg-flex align-items-lg-start"><input type="radio" class="margin_left"><label>B. @(j + 5)</label></div>
+        <div class="text-left d-lg-flex align-items-lg-start"><input type="radio" class="margin_left"><label>C. @(j + 2)</label></div>
+        <div class="text-left d-lg-flex align-items-lg-start"><input type="radio" class="margin_left"><label>D. @(j + 4)</label></div>
+    </form>
+    }
+
+</div>

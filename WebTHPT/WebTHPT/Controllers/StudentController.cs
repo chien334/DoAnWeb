@@ -13,5 +13,14 @@ namespace WebTHPT.Controllers
         {
             return View();
         }
+        public ActionResult ThongTinHocSinh()
+        {
+            return View();
+        }
+        public ActionResult LayCauHoi()
+        {
+
+            return View();
+        }
     }
 }
