@@ -190,17 +190,19 @@
     <Content Include="Content\StudentCss\jqvmap.min.css" />
     <Content Include="Content\StudentCss\nprogress.css" />
     <Content Include="Content\StudentCss\TTHSCss\Article-Clean.css" />
+    <Content Include="Content\StudentCss\TTHSCss\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\StudentCss\TTHSCss\bootstrap.min.css" />
     <Content Include="Content\StudentCss\TTHSCss\Footer-Basic.css" />
-    <Content Include="Content\StudentCss\TTHSCss\FPE-Gentella-form-elements-1.css" />
     <Content Include="Content\StudentCss\TTHSCss\FPE-Gentella-form-elements.css" />
     <Content Include="Content\StudentCss\TTHSCss\Header-Blue.css" />
     <Content Include="Content\StudentCss\TTHSCss\Navigation-Clean.css" />
-    <Content Include="Content\StudentCss\TTHSCss\Profile-Edit-Form-1.css" />
     <Content Include="Content\StudentCss\TTHSCss\Profile-Edit-Form.css" />
-    <Content Include="Content\StudentCss\TTHSCss\Sidebar-Menu-1.css" />
     <Content Include="Content\StudentCss\TTHSCss\Sidebar-Menu.css" />
     <Content Include="Content\StudentCss\TTHSCss\styles.css" />
+    <Content Include="Content\TeacherCss\LayCauHoi.css" />
+    <Content Include="Content\TeacherCss\styles.css" />
+    <Content Include="Content\TeacherCss\UnderSpeed---Floating-Label-1.css" />
+    <Content Include="Content\TeacherCss\UnderSpeed---Floating-Label.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fa-brands-400.svg" />
     <Content Include="fonts\fa-regular-400.svg" />
@@ -238,8 +240,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\StudentJs\bootstrap-datetimepicker.min.js" />
     <Content Include="Scripts\StudentJs\bootstrap-progressbar.js" />
     <Content Include="Scripts\StudentJs\bootstrap-progressbar.min.js" />
+    <Content Include="Scripts\StudentJs\bootstrap.bundle.min.js" />
     <Content Include="Scripts\StudentJs\bootstrap.min.js" />
     <Content Include="Scripts\StudentJs\Chart.min.js" />
     <Content Include="Scripts\StudentJs\curvedLines.js" />
@@ -249,6 +253,7 @@
     <Content Include="Scripts\StudentJs\fastclick.js" />
     <Content Include="Scripts\StudentJs\gauge.min.js" />
     <Content Include="Scripts\StudentJs\icheck.min.js" />
+    <Content Include="Scripts\StudentJs\jquery-3.3.1.min.js" />
     <Content Include="Scripts\StudentJs\jquery.flot.js" />
     <Content Include="Scripts\StudentJs\jquery.flot.orderBars.js" />
     <Content Include="Scripts\StudentJs\jquery.flot.pie.js" />
@@ -263,11 +268,15 @@
     <Content Include="Scripts\StudentJs\jquery.vmap.world.js" />
     <Content Include="Scripts\StudentJs\moment.min.js" />
     <Content Include="Scripts\StudentJs\nprogress.js" />
+    <Content Include="Scripts\StudentJs\popper.min.js" />
     <Content Include="Scripts\StudentJs\skycons.js" />
     <Content Include="Scripts\StudentJs\TTHSJs\bootstrap.min.js" />
     <Content Include="Scripts\StudentJs\TTHSJs\jquery.min.js" />
     <Content Include="Scripts\StudentJs\TTHSJs\Profile-Edit-Form.js" />
     <Content Include="Scripts\StudentJs\TTHSJs\Sidebar-Menu.js" />
+    <Content Include="Scripts\StudentJs\vi.js" />
+    <Content Include="Scripts\TeacherJs\jquery.min.js" />
+    <Content Include="Scripts\TeacherJs\UnderSpeed---Floating-Label.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -281,8 +290,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Student\ThongTinHocSinh.cshtml" />
-    <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Student\LayCauHoi.cshtml" />
+    <Content Include="Views\TeacherLayout\TeacherLayout.cshtml" />
+    <Content Include="Views\Teacher\Index.cshtml" />
+    <Content Include="Views\Student\DiemHocSinh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

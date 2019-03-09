@@ -22,5 +22,10 @@ namespace WebTHPT.Controllers
 
             return View();
         }
+        public ActionResult DiemHocSinh()
+        {
+
+            return View();
+        }
     }
 }

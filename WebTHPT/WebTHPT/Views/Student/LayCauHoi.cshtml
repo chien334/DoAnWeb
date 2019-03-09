@@ -1,9 +1,16 @@
 ﻿
 @{
     ViewBag.Title = "LayCauHoi";
-    Layout = "~/Views/StudentLayout/StudentLayout.cshtml";
+    Layout = "~/Views/TeacherLayout/TeacherLayout.cshtml";
 }
-
-<h2>LayCauHoi</h2>
-<input type="text"/>
-
+<link href="~/Content/TeacherCss/UnderSpeed---Floating-Label.css" rel="stylesheet" />
+<h2 style="margin-top:2%">Câu hỏi bộ đề kiềm tra 15 phút</h2>
+<div class="container">
+    <div class="sarici">
+        <label id="aciklama">Nhập câu hỏi và câu trả lời :</label>
+        <textarea style="width:100%" id="giris" placeholder="Câu hỏi và câu trả lời"></textarea> 
+        <button style=" margin-top:5px">Xác nhận</button>
+    </div>
+</div>
+<script src="~/Scripts/TeacherJs/jquery.min.js"></script>
+<script src="~/Scripts/TeacherJs/UnderSpeed---Floating-Label.js"></script>
