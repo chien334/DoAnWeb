@@ -28,7 +28,7 @@
         bottom: .5em;
     }
 </style>
-
+<!--proflie student-->
 <div id="Thong_tin_HS">
     <div _ngcontent-c9="" class="row">
         <div _ngcontent-c9="" class="col-md-6">
@@ -62,11 +62,13 @@
     </div>
 
 </div><hr />
+<!--form search-->
 <form class="form-inline md-form mr-auto mb-4">
     <label class="btn aqua-gradient btn-rounded btn-sm my-0">Tìm Kiếm Theo Tên Bài Kiểm Tra</label>
     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
     <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">Search</button>
 </form>
+<!--table poin student-->
 <div style="margin-top:15px">
     <table id="selectedColumn" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
         <thead>
@@ -106,74 +108,78 @@
                 </th>
             </tr>
         </thead>
-        @for (int i = 0; i < 10; i++)
-        {
-            <tbody>
-                <tr>
-                    @for (int j = 0; i < 10; j++)
-                    {
-                        <td>Kiểm tra 15 phút</td>
-                        <td>
-                            @{
-                                Random rd = new Random();
-                                int diem = rd.Next(5, 10);
-                            }
-                        </td>
-                    }
 
-                </tr>
+        <tbody>
+                @{
+                    int diem;
+                    Random rd = new Random();
+                }
+                @for (int i = 0; i < 10; i++)
+                {
+                    <tr>
+                        <td>Kiểm tra 15 phút lần @(i+1)</td>
+
+
+                        @for (int j = 0; j < 10; j++)
+                            {
+                               diem = rd.Next(5, 10);
+
+                            <td>@diem</td>
+                        }
+                    </tr>
+                }
             </tbody>
-        }
-
-        <tfoot>
-            <tr>
-                <th>
-                    Tên Môn Học
-                </th>
-                <th>
-                    Toán học
-                </th>
-                <th>
-                    Vật Lý
-                </th>
-                <th>
-                    Hóa học
-                </th>
-                <th>
-                    Sinh học
-                </th>
-                <th>
-                    Anh văn
-                </th>
-                <th>
-                    Ngữ văn
-                </th>
-                <th>
-                    Lịch sử
-                </th>
-                <th>
-                    Địa lí
-                </th>
-                <th>
-                    Công nghệ
-                </th>
-                <th>
-                    Công dân
-                </th>
-            </tr>
-        </tfoot>
-    </table>
-</div>
 
 
-<script>
-    $(document).ready(function () {
-        $('#dtOrderExample').DataTable({
-            columnDefs: [{
-                orderable: false,
-                targets: 3
-            }]
+            <tfoot>
+                <tr>
+                    <th>
+                        Tên Môn Học
+                    </th>
+                    <th>
+                        Toán học
+                    </th>
+                    <th>
+                        Vật Lý
+                    </th>
+                    <th>
+                        Hóa học
+                    </th>
+                    <th>
+                        Sinh học
+                    </th>
+                    <th>
+                        Anh văn
+                    </th>
+                    <th>
+                        Ngữ văn
+                    </th>
+                    <th>
+                        Lịch sử
+                    </th>
+                    <th>
+                        Địa lí
+                    </th>
+                    <th>
+                        Công nghệ
+                    </th>
+                    <th>
+                        Công dân
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#dtOrderExample').DataTable({
+                columnDefs: [{
+                    orderable: false,
+                    targets: 3
+                }]
+            });
+            $('.dataTables_length').addClass('bs-select');
         });
-        $('.dataTables_length').addClass('bs-select');
-    });
-</script>
+    </script>
