@@ -9,88 +9,35 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Login/Create</title>
-
-    <link href="~/Content/LoginCss/animate.min.css" rel="stylesheet" />
-    <link href="~/Content/LoginCss/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/LoginCss/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/LoginCss/nprogress.css" rel="stylesheet" />
-    <link href="~/Content/StudentCss/custom.min.css" rel="stylesheet" />>
 </head>
-<body class="login">
-    <div>
-        <a class="hiddenanchor" id="signup"></a>
-        <a class="hiddenanchor" id="signin"></a>
-        <div class="login_wrapper">
-            <div class="animate form login_form">
-                <section class="login_content">
-                    <form>
-                        <h1> Đăng Nhập </h1>
-                        <div>
-                            <input type="text" class="form-control" placeholder="Tên Đăng Nhập" required="" />
-                        </div>
-                        <div>
-                            <input type="password" class="form-control" placeholder="Mật Khẩu" required="" />
-                        </div>
-                        <div>
-                            <a class="btn btn-default submit" href="@Url.Action("Index","Home")"> Đăng Nhập </a>
-                            <a class="reset_pass" href="#"> Quên Mật Khẩu ?</a>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="separator">
-                            <p class="change_link">
-                                Bạn chưa có tài khoản?
-                                <a href="#signup" class="to_register"> Đăng Ký </a>
-                            </p>
-                            <div class="clearfix"></div>
-                            <br />
-                            <div>
-                                <h1><i class="fas fa-graduation-cap"></i> <span>Web Thi Trắc Nghiệm Online</span></h1>
-                                <p>©2019 All Rights Reserved. Andrews</p>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-            </div>
-            <div id="register" class="animate form registration_form">
-                <section class="login_content">
-                    <form>
-                        <h1> Tạo Tài Khoản </h1>
-                        <div>
-                            <input type="text" class="form-control" placeholder=" Họ Và Tên " required="" />
-                        </div>
-                        <div>
-                            <input type="text" class="form-control" placeholder="Tên Đăng Nhập" required="" />
-                        </div>
-                        <div>
-                            <input type="email" class="form-control" placeholder="Email" required="" />
-                        </div>
-                        <div>
-                            <input type="password" class="form-control" placeholder="Mật Khẩu" required="" />
-                        </div>
-                        <div>
-                            <input type="password" class="form-control" placeholder="Nhập Lại Mật Khẩu" required="" />
-                        </div>
-                        <div>
-                            <a class="btn btn-default submit" href="index.html"> Xác Nhận </a>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="separator">
-                            <p class="change_link">
-                                Bạn đã có tài khoản ?
-                                <a href="#signin" class="to_register"> Đăng Nhập </a>
-                            </p>
-                            <div class="clearfix"></div>
-                            <br />
-                            <div>
-                                <h1><i class="fas fa-graduation-cap"></i> <span>Web Thi Trắc Nghiệm Online</span></h1>
-                                <p>©2019 All Rights Reserved. Andrews</p>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-            </div>
-        </div>
-    </div>
-    <script src="~/Scripts/all.js"></script>
+<body>
+    <h4 style="color:red;text-align:center">@ViewBag.ThongBao</h4>
+
+    <table align="center">
+        <h3 style="text-align:center">Đăng Nhập</h3>
+        <center><img src="~/Image/images.png" class="profile-img text-center" /></center>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            <tr style="height:40px">
+                <td>Tên Đăng Nhập</td>
+                <td>
+                    @Html.TextBox("Username")
+                </td>
+            </tr>
+            <tr style="height:40px">
+                <td align="right">Mật khẩu</td>
+                <td>
+                    @Html.Password("Password")
+                </td>
+            </tr>
+            <tr style="height:40px">
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng Nhập" />
+                </td>
+            </tr>
+        }
+    </table>
 </body>
 </html>

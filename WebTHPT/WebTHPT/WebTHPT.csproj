@@ -170,10 +170,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\QLWebTracNghiem.designer.cs">
+    <Compile Include="Models\QLThiTracNghiem.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLWebTracNghiem.dbml</DependentUpon>
+      <DependentUpon>QLThiTracNghiem.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -190,8 +190,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\LoginCss\animate.min.css" />
     <Content Include="Content\LoginCss\bootstrap.min.css" />
+    <Content Include="Content\LoginCss\Fern-Login-Form.css" />
     <Content Include="Content\LoginCss\font-awesome.min.css" />
     <Content Include="Content\LoginCss\nprogress.css" />
+    <Content Include="Content\LoginCss\styles.css" />
     <Content Include="Content\StudentCss\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="Content\StudentCss\custom.min.css" />
     <Content Include="Content\StudentCss\daterangepicker.css" />
@@ -222,6 +224,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Image\h8.jpg" />
+    <Content Include="Image\images.png" />
     <Content Include="Scripts\all.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -240,13 +243,13 @@
     <Content Include="fonts\fa-solid-900.ttf" />
     <Content Include="fonts\fa-solid-900.woff" />
     <Content Include="fonts\fa-solid-900.woff2" />
-    <Content Include="Models\QLWebTracNghiem.dbml">
+    <Content Include="Models\QLThiTracNghiem.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLWebTracNghiem.designer.cs</LastGenOutput>
+      <LastGenOutput>QLThiTracNghiem.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Models\QLWebTracNghiem.dbml.layout">
-      <DependentUpon>QLWebTracNghiem.dbml</DependentUpon>
+    <None Include="Models\QLThiTracNghiem.dbml.layout">
+      <DependentUpon>QLThiTracNghiem.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -313,10 +316,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Student\ThongTinHocSinh.cshtml" />
-    <Content Include="Views\Student\LayCauHoi.cshtml" />
+    <Content Include="Views\Teacher\LayCauHoi.cshtml" />
     <Content Include="Views\TeacherLayout\TeacherLayout.cshtml" />
     <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Student\DiemHocSinh.cshtml" />
+    <Content Include="Views\Student\GopY.cshtml" />
+    <Content Include="Views\Student\DeThi.cshtml" />
+    <Content Include="Views\Student\ThongTinHocSinh11.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
