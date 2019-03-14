@@ -32,7 +32,7 @@ namespace WebTHPT.Controllers
                           NienKhoa = h.NienKhoa,
                           NgaySinh = h.NgaySinh
                       }).OrderBy(c => c.MaHS).ToList();
-            return View(hs);
+            return View(hs.ToList());
         }
 
         public ActionResult DiemHocSinh()
