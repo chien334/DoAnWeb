@@ -223,9 +223,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Image\5D3_1814.JPG" />
-    <Content Include="Image\h8.jpg" />
+    <Content Include="Image\Students\h8.jpg" />
     <Content Include="Image\images.png" />
+    <Content Include="Image\Students\HS190001.jpg" />
     <Content Include="Scripts\all.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -249,9 +249,6 @@
       <LastGenOutput>QLThiTracNghiem.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Models\QLThiTracNghiem.dbml.layout">
-      <DependentUpon>QLThiTracNghiem.dbml</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -323,7 +320,7 @@
     <Content Include="Views\Student\DiemHocSinh.cshtml" />
     <Content Include="Views\Student\GopY.cshtml" />
     <Content Include="Views\Student\DeThi.cshtml" />
-    <Content Include="Views\Teacher\ThongTinGiaoVien.cshtml" />
+    <Content Include="Views\Student\ThongTinHocSinh11.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,6 +341,11 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\QLThiTracNghiem.dbml.layout">
+      <DependentUpon>QLThiTracNghiem.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -8,7 +8,7 @@
 <div _ngcontent-c9="" class="col-md-3">
     <div _ngcontent-c9="" class="row">
         <div _ngcontent-c9="" class="col-md-12">
-            <img _ngcontent-c9="" class="img-responsive" onerror="this.src='~/image/h8.jpg'" style="margin:auto" src="~/image/h8.jpg">
+            <img _ngcontent-c9="" class="img-responsive" onerror="this.src='~/image/h8.jp'" style="margin:auto" src="~/image/h8.jpg">
             <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
         </div>
         <div _ngcontent-c9="" class="col-md-12 mt-3">
@@ -49,37 +49,39 @@
 <section _ngcontent-c9="" class="col-md-9 jarviswidget jarviswidget-sortable jarviswidget-color-blueDark pr-2">
     <div _ngcontent-c9="" class="widget-body">
         <form _ngcontent-c9="" class="form-horizontal ng-pristine ng-invalid ng-touched" novalidate="">
-            @*@foreach (var item in Model)
+            @foreach (var item in Model)
             {
-                @item
-            }*@
+
+
+
             <div _ngcontent-c9="" class="row">
                 <div _ngcontent-c9="" class="col-md-6">
                     Mã số học sinh:
-                    <span _ngcontent-c9="" class="font-weight-bold">HS190011</span>
+                    <span _ngcontent-c9="" class="font-weight-bold">@item.MaHS</span>
                 </div>
                 <div _ngcontent-c9="" class="col-md-6">
                     Họ tên:
                     <span _ngcontent-c9="" class="font-weight-bold">
-                        Nguyễn Thị Phương Diễm
+                        @item.HoTenHS
                     </span>
                 </div>
             </div>
             <div _ngcontent-c9="" class="row mt-2">
                 <div _ngcontent-c9="" class="col-md-6">
                     Lớp:
-                    <span _ngcontent-c9="" class="font-weight-bold">12A2</span>
+                    <span _ngcontent-c9="" class="font-weight-bold">@item.TenLop</span>
                 </div>
 
                 <div _ngcontent-c9="" class="col-md-6">
                     Ngày sinh:
-                    <span _ngcontent-c9="">20-04-2001</span>
+                    
+                    <span _ngcontent-c9="">@String.Format("{0:dd/MM/yyyy}", item.NgaySinh)</span>
                 </div>
             </div>
             <div _ngcontent-c9="" class="row  mt-2">
                 <div _ngcontent-c9="" class="col-md-6">
                     Niên khóa:
-                    <span _ngcontent-c9="">2016 - 2019</span>
+                    <span _ngcontent-c9="">@item.NienKhoa</span>
                 </div>
             </div>
             <div _ngcontent-c9="" class="row mt-4">
@@ -94,7 +96,7 @@
                             <div _ngcontent-c9="" class="col-md-2">
                                 <label _ngcontent-c9="" class="control-label">
                                     Giới tính
-                                    <span _ngcontent-c9="" class="text-danger">(*)</span>:
+                                    <span _ngcontent-c9="" class="text-danger">(*)</span>
                                 </label>
                             </div>
                             <div _ngcontent-c9="" class="col-md-4">
@@ -225,7 +227,7 @@
                                 </label>
                             </div>
                             <div _ngcontent-c9="" class="col-md-4">
-                                <input _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="dien_thoai_bao_tin_gap" type="text">
+                                <input _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="dien_thoai_bao_tin_gap" type="text" value=@item.DienThoai>
                                 <!---->
                             </div>
 
@@ -338,7 +340,7 @@
 
                         </div>
                         <div _ngcontent-c9="" class="col-md-4">
-                            <input _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="quoc_tich" type="text">
+                            <input _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="quoc_tich" type="text" value=@item.QuocTich>
                             <!---->
 
                         </div>
@@ -354,8 +356,8 @@
                             </label>
                         </div>
                         <div _ngcontent-c9="" class="col-md-4">
-                            <select _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="dan_toc">
-                                <option _ngcontent-c9="" value="">Chọn dân tộc</option>
+                            <select _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="dan_toc" name=@item.danToc>
+                                <option _ngcontent-c9="" value=""></option>
                                 <!---->
                                 <option _ngcontent-c9="" value="13" class="ng-star-inserted">Ba na</option>
                                 <option _ngcontent-c9="" value="23" class="ng-star-inserted">Bru-Vân Kiều</option>
@@ -429,7 +431,7 @@
                         </div>
                         <div _ngcontent-c9="" class="col-md-4">
                             <select _ngcontent-c9="" class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="ton_giao">
-                                <option _ngcontent-c9="" value="">Chọn tôn giáo</option>
+                                <option _ngcontent-c9="" value="">@item.TonGiao</option>
                                 <!---->
                                 <option _ngcontent-c9="" value="9" class="ng-star-inserted">Bà La Môn</option>
                                 <option _ngcontent-c9="" value="10" class="ng-star-inserted">Bà Ni</option>
@@ -448,7 +450,9 @@
                     </div>
                 </fieldset>
             </div>
+            }
         </form>
+
     </div>
 
     <div _ngcontent-c9="" class="row mt-4">
