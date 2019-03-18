@@ -23,15 +23,6 @@ namespace WebTHPT.Controllers
             return View(hs);
         }
 
-        public string GetGioiTinh(bool gt)
-        {
-            if (!gt)
-            {
-                return "nam";
-            }
-            else return "nữ";
-        }
-
         public ActionResult DiemHocSinh()
         {
 
