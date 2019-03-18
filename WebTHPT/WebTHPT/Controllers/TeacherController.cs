@@ -18,5 +18,9 @@ namespace WebTHPT.Controllers
 
             return View();
         }
+        public ActionResult ThongTinGiaoVien()
+        {
+            return View();
+        }
     }
 }
