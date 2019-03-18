@@ -22,5 +22,9 @@ namespace WebTHPT.Controllers
         {
             return View();
         }
+        public ActionResult QuanLyLopHoc()
+        {
+            return View();
+        }
     }
 }

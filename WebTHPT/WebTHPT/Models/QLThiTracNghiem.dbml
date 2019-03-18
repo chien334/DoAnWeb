@@ -7,7 +7,18 @@
       <Column Name="MaLop" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
       <Column Name="NgaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="NienKhoa" Type="System.String" DbType="Char(9) NOT NULL" CanBeNull="false" />
-      <Column Name="PassWordHash" Type="System.Data.Linq.Binary" DbType="Binary(64)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PassWordHash" Type="System.Data.Linq.BinaryiemDataContext();
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult LayCauHoi()
+        {
+
+            return View();
+        }
+        public ActionResult ThongTinGiaoVien()
+        {" DbType="Binary(64)" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="HocSinh_ThongTinH" Member="ThongTinHs" ThisKey="MaHS" OtherKey="MaHS" Type="ThongTinH" />
       <Association Name="HocSinh_PhuHuynh" Member="PhuHuynhs" ThisKey="MaHS" OtherKey="MaHS" Type="PhuHuynh" />
       <Association Name="HocSinh_HoSoHocSinh" Member="HoSoHocSinhs" ThisKey="MaHS" OtherKey="MaHS" Type="HoSoHocSinh" />

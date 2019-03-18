@@ -323,6 +323,9 @@
     <Content Include="Views\Student\DeThi.cshtml" />
     <Content Include="Views\Student\ThongTinHocSinh11.cshtml" />
     <Content Include="Views\Teacher\ThongTinGiaoVien.cshtml" />
+    <Content Include="Views\Student\DanhSachHocSinh.cshtml" />
+    <Content Include="Views\Teacher\QuanLyLopHoc0.cshtml" />
+    <Content Include="Views\Teacher\QuanLyLopHoc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
