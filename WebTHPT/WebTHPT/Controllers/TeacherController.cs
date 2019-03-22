@@ -26,5 +26,13 @@ namespace WebTHPT.Controllers
         {
             return View();
         }
+        public ActionResult DanhSachHocSinh()
+        {
+            return View();
+        }
+        public ActionResult BoDe()
+        {
+            return View();
+        }
     }
 }

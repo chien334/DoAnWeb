@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "BoDe";
+    Layout = "~/Views/TeacherLayout/TeacherLayout.cshtml";
+}
+
+<h2>Tạo Bộ Đề:</h2>
+<div class="btn-group" style="">
+    @for (int i = 0; i < 3; i++)
+    {
+        <button type="button" class="btn btn-primary">Đề thi môn Toán số năm học 2017-2018</button>
+        <button type="button" class="btn btn-primary">Đề thi môn Toán hình năm học 2016-2018</button>
+    }
+
+</div>
+<div class="btn-group">
+    @for (int i = 0; i < 3; i++)
+    {
+        <button type="button" class="btn btn-primary">Đề thi môn Toán số năm học 2014-2015</button>
+        <button type="button" class="btn btn-primary">Đề thi môn Toán hình năm học 2010-2011</button>
+    }
+
+</div>
+<div class="btn-group">
+    @for (int i = 0; i < 3; i++)
+    {
+        <button type="button" class="btn btn-primary">Đề thi môn Toán số năm học 2018-2019</button>
+        <button type="button" class="btn btn-primary">Đề thi môn Toán hình năm học 2013-2014</button>
+    }
+
+</div>

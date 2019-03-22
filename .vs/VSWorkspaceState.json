@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebTHPT"
+    "\\WebTHPT",
+    "\\WebTHPT\\WebTHPT",
+    "\\WebTHPT\\WebTHPT\\Controllers",
+    "\\WebTHPT\\WebTHPT\\Views",
+    "\\WebTHPT\\WebTHPT\\Views\\Teacher"
   ],
-  "SelectedNode": "\\WebTHPT\\WebTHPT.sln",
+  "SelectedNode": "\\WebTHPT\\WebTHPT\\Views\\Teacher\\BoDe.cshtml",
   "PreviewInSolutionExplorer": false
 }
