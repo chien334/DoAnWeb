@@ -21,6 +21,8 @@ namespace WebTHPT.Controllers
         {
             var hs = from h in db.ThongTinTKHs select h;
             return View(hs);
+
+
         }
 
         public ActionResult DiemHocSinh()
