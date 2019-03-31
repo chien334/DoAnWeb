@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "QuanLyLopHoc";
+    Layout = "~/Areas/Teacher/Views/Shared/TeacherLayout.cshtml";
+}
+<h2>Quản Lý Lớp Học:</h2>
+<div _ngcontent-c9="" class="col-md-12">
+    <div _ngcontent-c9="" class="row mt-3">
+        <table class="table table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th>Niên khóa</th>
+                    <th>Mã lớp</th>
+                    <th>Tên Lớp</th>
+                    <th>Môn Dạy</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < 5; i++)
+                {
+                    <tr>
+                        <td>2018-2022</td>
+                        <td>A0103</td>
+                        <td>11A01</td>
+                        <td>Toán hình 11</td>
+                        <td>
+                            <a href="#" title="Danh sách Học Sinh">DS Học Sinh</a>
+                        </td>
+                        <td>
+                            <a href="#" title="Đề thi">Đề Thi</a>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

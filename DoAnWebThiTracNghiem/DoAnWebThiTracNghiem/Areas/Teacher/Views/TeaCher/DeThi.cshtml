@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "DeThi";
+    Layout = "~/Areas/Teacher/Views/Shared/TeacherLayout.cshtml";
+}
+<script src="~/Scripts/tinymce/js/tinymce/tinymce.min.js"></script>
+<script>tinymce.init({ selector: 'textarea' });</script>
+<div style="scrollbar-highlight-color:aqua;height: 100%; min-height: 1px " class="CodeMirror-vscrollbar" cm-not-content="true" id="scroll_box">
+    @for (int i = 0; i < 40; i++)
+    {
+    <div class="form-group">
+        <label for="comment">Câu hỏi @(i + 1) : </label>
+        <textarea placeholder="Nội dung câu hỏi"></textarea>
+        <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="customRadioInline" class="custom-control-input"><label>A.</label><input class="form-control" type="text" placeholder="Nội dung câu trả lời"> </div>
+        <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="customRadioInline" class="custom-control-input"><label>B.</label><input class="form-control" type="text" placeholder="Nội dung câu trả lời"> </div>
+        <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="customRadioInline" class="custom-control-input"><label>C.</label><input class="form-control" type="text" placeholder="Nội dung câu trả lời"> </div>
+        <div class="custom-control custom-radio custom-control-inline"><input type="radio" name="customRadioInline" class="custom-control-input"><label>D.</label><input class="form-control" type="text" placeholder="Nội dung câu trả lời"> </div>
+        <br /><br />
+    </div>
+    }
+</div>
