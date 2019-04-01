@@ -10,3 +10,15 @@ D:\Web\DoAnWebThiTracNghiem\Model\obj\Debug\Model.csproj.CopyComplete
 D:\Web\DoAnWebThiTracNghiem\Model\obj\Debug\Model.dll
 D:\Web\DoAnWebThiTracNghiem\Model\obj\Debug\Model.pdb
 D:\Web\DoAnWebThiTracNghiem\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\Model.dll.config
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\Model.dll
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\Model.pdb
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\EntityFramework.dll
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\EntityFramework.xml
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\obj\Debug\Model.dll
+C:\Users\lequy\Source\Repos\DoAnWeb2\DoAnWebThiTracNghiem\Model\obj\Debug\Model.pdb

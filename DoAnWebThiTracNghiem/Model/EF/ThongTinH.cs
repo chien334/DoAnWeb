@@ -13,7 +13,9 @@ namespace Model.EF
         [StringLength(8)]
         public string MaHS { get; set; }
 
-        public bool GioiTinh { get; set; }
+        [Required]
+        [StringLength(5)]
+        public string GioiTinh { get; set; }
 
         [Required]
         [StringLength(13)]
@@ -24,7 +26,7 @@ namespace Model.EF
         public string Email { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(2)]
         public string NoiSinh { get; set; }
 
         [Required]
@@ -32,7 +34,7 @@ namespace Model.EF
         public string QuocTich { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(2)]
         public string DanToc { get; set; }
 
         [Required]
@@ -41,6 +43,10 @@ namespace Model.EF
 
         [Required]
         public string HinhAnh { get; set; }
+
+        public virtual DanToc DanToc1 { get; set; }
+
+        public virtual devvn_tinhthanhpho devvn_tinhthanhpho { get; set; }
 
         public virtual HocSinh HocSinh { get; set; }
     }

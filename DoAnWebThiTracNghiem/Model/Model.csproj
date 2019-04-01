@@ -53,7 +53,11 @@
     <Compile Include="DAO\DeThiDAO.cs" />
     <Compile Include="DAO\UserDao.cs" />
     <Compile Include="EF\CauHoi.cs" />
+    <Compile Include="EF\DanToc.cs" />
     <Compile Include="EF\DeThi.cs" />
+    <Compile Include="EF\devvn_quanhuyen.cs" />
+    <Compile Include="EF\devvn_tinhthanhpho.cs" />
+    <Compile Include="EF\devvn_xaphuongthitran.cs" />
     <Compile Include="EF\DiaChi.cs" />
     <Compile Include="EF\GiaoVien.cs" />
     <Compile Include="EF\GopY.cs" />
@@ -61,6 +65,7 @@
     <Compile Include="EF\HocSinhDeThi.cs" />
     <Compile Include="EF\HoSo.cs" />
     <Compile Include="EF\Khoi.cs" />
+    <Compile Include="EF\LoaiDC.cs" />
     <Compile Include="EF\Lop.cs" />
     <Compile Include="EF\LuaChon.cs" />
     <Compile Include="EF\MonHoc.cs" />

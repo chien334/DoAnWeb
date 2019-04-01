@@ -10,9 +10,8 @@ namespace Model.DAO
     public class UserDao
     {
         QLThiTracNghiem _db = null;
-        private UserDao()
+        public UserDao()
         {
-
             _db = new QLThiTracNghiem();
         }
         public string Insert(GiaoVien entity)

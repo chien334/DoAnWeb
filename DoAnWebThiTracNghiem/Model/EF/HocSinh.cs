@@ -22,6 +22,11 @@ namespace Model.EF
         [StringLength(8)]
         public string MaHS { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserID { get; set; }
+
+        public int? permission { get; set; }
+
         [Required]
         [StringLength(50)]
         public string HoTenHS { get; set; }

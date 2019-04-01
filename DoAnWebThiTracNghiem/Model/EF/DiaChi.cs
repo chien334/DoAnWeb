@@ -16,26 +16,32 @@ namespace Model.EF
         [StringLength(8)]
         public string MaHS { get; set; }
 
-        [Required]
-        [StringLength(40)]
-        public string TenDC { get; set; }
+        public int MaLoai { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(2)]
         public string TinhTP { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(3)]
         public string QuanHuyen { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(5)]
         public string PhuongXa { get; set; }
 
         [Required]
         [StringLength(300)]
         public string SoNha { get; set; }
 
+        public virtual devvn_quanhuyen devvn_quanhuyen { get; set; }
+
+        public virtual devvn_tinhthanhpho devvn_tinhthanhpho { get; set; }
+
+        public virtual devvn_xaphuongthitran devvn_xaphuongthitran { get; set; }
+
         public virtual HocSinh HocSinh { get; set; }
+
+        public virtual LoaiDC LoaiDC { get; set; }
     }
 }
